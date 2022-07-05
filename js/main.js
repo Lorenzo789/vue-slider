@@ -63,10 +63,21 @@ const app = new Vue
             ]
             
         },
+
+        methods: {
+            nextSlide: function(){
+                this.index = this.index + 1;
+
+                if (this.index === this.images.lenght) {
+
+                    this.index = 0;
+                };
+            }
+        }
     }
 );
 
 /**
  * rifare la struttura usando js 
- * 
+ * funzione click su next e previous
  */
