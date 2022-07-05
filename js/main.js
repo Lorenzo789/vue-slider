@@ -80,6 +80,9 @@ const app = new Vue
 
                    this.index = this.images.length - 1;
                 };
+            },
+            thumbActive: function(){
+                this.index = 1;
             }
         }
     }
