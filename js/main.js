@@ -34,6 +34,7 @@ const app = new Vue
         el: '#root',
         data: {
             index: 0,
+            isActive: false,
             images: [
                 {
                     image: 'img/01.jpg',
@@ -81,8 +82,9 @@ const app = new Vue
                    this.index = this.images.length - 1;
                 };
             },
-            thumbActive: function(index){ 
+            thumbIsActive: function(index){ 
                 this.index = index;
+                this.isActive = true
             }
         }
     }
