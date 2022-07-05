@@ -84,6 +84,10 @@ const app = new Vue
             thumbIsActive: function(index){ 
                 this.index = index;
             }
+        },
+
+        created(){
+            setInterval(this.nextSlide, 3000);
         }
     }
 );
@@ -92,6 +96,6 @@ const app = new Vue
  * rifare la struttura usando js 
  * funzione click su next e previous
  * funzione/i per le thumb che al click le fanno visualizzare in grande
- * autoplay ogni tre secondi generated?
+ * autoplay ogni tre secondi created?
  * mouseover and mouseleave
  */
