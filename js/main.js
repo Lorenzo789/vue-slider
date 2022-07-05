@@ -68,9 +68,17 @@ const app = new Vue
             nextSlide: function(){
                 this.index = this.index + 1;
 
-                if (this.index === this.images.lenght) {
+                if (this.index === this.images.length) {
 
                     this.index = 0;
+                };
+            },
+            prevSlide: function(){
+                this.index = this.index - 1;
+
+                if (this.index === - 1) {
+
+                   this.index = this.images.length - 1;
                 };
             }
         }
