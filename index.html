@@ -32,16 +32,16 @@
                     <div class="thumb active">
                         <img :src="this.images[0].image" :alt="this.images[0].title"/>
                     </div>
-                    <div @click="thumbActive" class="thumb">
+                    <div @click="thumbActive(1)" class="thumb">
                         <img :src="this.images[1].image" :alt="this.images[1].title"/>
                     </div>
-                    <div class="thumb">
+                    <div @click="thumbActive(2)"  class="thumb">
                         <img :src="this.images[2].image" :alt="this.images[2].title"/>
                     </div>
-                    <div class="thumb">
+                    <div @click="thumbActive(3)"  class="thumb">
                         <img :src="this.images[3].image" :alt="this.images[3].title"/>
                     </div>
-                    <div class="thumb">
+                    <div @click="thumbActive(4)"  class="thumb">
                         <img :src="this.images[4].image" :alt="this.images[4].title"/>
                     </div>
                 </div>

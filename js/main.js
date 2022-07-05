@@ -81,8 +81,8 @@ const app = new Vue
                    this.index = this.images.length - 1;
                 };
             },
-            thumbActive: function(){
-                this.index = 1;
+            thumbActive: function(index){ 
+                this.index = index;
             }
         }
     }
@@ -91,4 +91,7 @@ const app = new Vue
 /**
  * rifare la struttura usando js 
  * funzione click su next e previous
+ * funzione/i per le thumb che al click le fanno visualizzare in grande
+ * autoplay ogni tre secondi generated?
+ * mouseover and mouseleave
  */
